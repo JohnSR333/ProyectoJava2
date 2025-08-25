@@ -1,18 +1,37 @@
-## Getting Started
+#  Sistema de Reservas de Cine  
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 📌 1. Análisis del Sistema  
 
-## Folder Structure
+###  Problema  
+En muchos cines, el proceso de venta de boletos y asignación de asientos se hace manualmente, lo que ocasiona:  
+- Doble asignación de asientos.  
+- Pérdida de tiempo en la atención al cliente.  
+- Dificultad para controlar funciones y disponibilidad de salas.  
+- Imposibilidad de generar reportes de ventas o popularidad de películas.  
 
-The workspace contains two folders by default, where:
+###  Propuesta 
+Desarrollar un sistema en el que permita:  
+- Registrar películas, salas y funciones.  
+- Consultar disponibilidad de asientos en cada función.  
+- Realizar reservas de manera segura.  
+- Generar comprobantes de reserva para los clientes.  
+- Llevar un control básico de la gestión del cine.  
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+###  Requisitos 
+- Crear y gestionar películas.  
+- Crear funciones (película, sala, fecha, hora).  
+- Mostrar los asientos disponibles.  
+- Permitir a los clientes reservar asiento(s).  
+- Emitir un comprobante o confirmación de la reserva.  
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 📌 2. Diseño del Sistema  
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+###  Clases Principales  
+- **Pelicula** → título, género, duración.  
+- **Sala** → número de sala, capacidad, lista de asientos.  
+- **Asiento** → fila, número, estado (libre/ocupado).  
+- **Funcion** → película, sala, fecha, hora, lista de asientos disponibles.  
+- **Cliente** → nombre, documento, correo.  
+- **Reserva** → cliente, función, asiento(s).  
+- **Cine** → gestiona salas, funciones, películas y reservas.  
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
