@@ -37,7 +37,7 @@ Desarrollar un sistema en el que permita:
 
 ## 📌 3. Diseño de Clases para el Sistema de Reservas de Cine
 
- 1. Clase Película
+ ### 1. Clase Película
 
  **Atributos:**
 título (String)
@@ -54,7 +54,7 @@ Pelicula2D
 Pelicula3D
 PeliculaAnimada (ejemplo si quieres diferenciar formatos o tipos).
 
-2. Clase Sala
+### 2. Clase Sala
 
  **Atributos:**
 numero (int)
@@ -71,7 +71,7 @@ Sala2D
 Sala3D
 SalaVIP
 
-3. Clase Asiento
+### 3. Clase Asiento
 
  **Atributos:**
 fila (char o int)
@@ -82,7 +82,7 @@ ocupar() → marca el asiento como ocupado.
 liberar() → marca el asiento como libre.
 estaDisponible() → devuelve true/false.
 
-4. Clase Función
+### 4. Clase Función
 
  **Atributos:**
 pelicula (Película)
@@ -93,7 +93,7 @@ Métodos:
 mostrarDetalles() → muestra película, sala, fecha y hora.
 verDisponibilidad() → consulta disponibilidad de asientos en la sala.
 
-5. Clase Cliente
+### 5. Clase Cliente
 
  **Atributos:**
 nombre (String)
@@ -108,7 +108,7 @@ consultarReservas() → lista reservas hechas por el cliente.
 ClienteRegular
 ClienteVIP (si quieres dar beneficios, descuentos, prioridad).
 
-6. Clase Reserva
+### 6. Clase Reserva
 
  **Atributos:**
 cliente (Cliente)
@@ -120,7 +120,7 @@ confirmar() → guarda la reserva.
 cancelar() → libera los asientos.
 mostrarTicket() → imprime comprobante de la reserva.
 
-7. Clase Cine
+### 7. Clase Cine
 
  **Atributos:**
 listaSalas (ArrayList<Sala>)
@@ -133,7 +133,7 @@ agregarSala(sala)
 programarFuncion(funcion)
 mostrarCartelera() → lista las funciones disponibles.
 
-🔹 Ejemplo de Herencia (subclases útiles)
+### 🔹 Ejemplo de Herencia (subclases útiles)
 
 Cliente → ClienteRegular, ClienteVIP.
 
